@@ -1,25 +1,11 @@
 spring:
   application:
     name: gateway-service
-  security:
-    oauth2:
-      client:
-        provider:
-          google:
-            issuer-uri: https://accounts.google.com
-        registration:
-          google:
-            client-id: 400884257819-fagl6eh7p712ojepqa5m7r92g49ak3ck.apps.googleusercontent.com
-            client-secret: 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
-            scope: openid,profile,email
-            redirect-uri: http://localhost:8080/login/oauth2/code/google
   zipkin:
     base-url: http://zipkin:9411/
     enabled: true
   cloud:
     gateway:
-      default-filters:
-        - OIDCTokenRelay
       discovery:
         locator:
           enabled: false
