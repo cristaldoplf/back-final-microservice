@@ -7,11 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.context.SecurityContext;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.web.bind.annotation.*;
 
 @Slf4j
@@ -24,15 +19,6 @@ public class CatalogController {
 	@Autowired
 	public CatalogController(CatalogService catalogService) {
 		this.catalogService = catalogService;
-	}
-
-	@GetMapping("/user")
-	public String user(@AuthenticationPrincipal OAuth2User principal) {
-		//return Collections.singletonMap("name", principal.getAttribute("name"));
-		SecurityContext context = SecurityContextHolder.getContext();
-		Authentication authentication = context.getAuthentication();
-		logger.info("Name", authentication.getName());
-		return "Hello user!";
 	}
 
 	@GetMapping("/{genre}")
