@@ -11,13 +11,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class MessageSender {
 
-    /* ===================== Attributes ===================== */
 
     private final RabbitTemplate rabbitTemplate;
     private final Queue movieQueue;
     private static final Logger log = LoggerFactory.getLogger(MessageSender.class);
 
-    /* ===================== Constructors ===================== */
 
     @Autowired
     public MessageSender(RabbitTemplate rabbitTemplate, Queue movieQueue) {
@@ -25,7 +23,6 @@ public class MessageSender {
         this.movieQueue = movieQueue;
     }
 
-    /* ===================== Methods ===================== */
 
     public void send(Movie movie) {
         log.info("[SEND MESSAGE TO " + this.movieQueue.getName() + "] -> " + movie);
