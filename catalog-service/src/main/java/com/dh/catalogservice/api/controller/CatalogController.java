@@ -23,7 +23,7 @@ public class CatalogController {
 
 	@GetMapping("/{genre}")
 	public CatalogWS getCatalogByGenre(@PathVariable String genre) {
-		logger.info("Request to get movies and series by genre {}", genre);
+		logger.info("Busqueda de series por genero {}", genre);
 		return catalogService.getCatalogByGenre(genre);
 	}
 

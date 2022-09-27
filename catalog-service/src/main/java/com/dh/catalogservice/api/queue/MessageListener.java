@@ -25,13 +25,13 @@ public class MessageListener {
 
     @RabbitListener(queues = {"${queue.movie.name}"})
     public void receiveMessage(@Payload MovieWS movie) {
-        log.info("[MESSAGE RECEIVE FROM MOVIE] -> " + movie);
+        log.info("[MENSAJE RECIBIDO DE PELICULA] -> " + movie);
         catalogService.updateCatalogByGenre(movie.getGenre());
     }
 
     @RabbitListener(queues = {"${queue.serie.name}"})
     public void receiveMessage(@Payload SerieWS serie) {
-        log.info("[MESSAGE RECEIVE FROM SERIE] -> " + serie);
+        log.info("[MENSAJE RECIBIDO DE SERIE] -> " + serie);
         catalogService.updateCatalogByGenre(serie.getGenre());
     }
 }

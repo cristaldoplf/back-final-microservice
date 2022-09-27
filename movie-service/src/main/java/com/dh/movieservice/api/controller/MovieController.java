@@ -27,13 +27,13 @@ public class MovieController {
 
 	@GetMapping("/{genre}")
 	public ResponseEntity<List<Movie>> getMovieByGenre(@PathVariable String genre) {
-		logger.info("Getting list of movies by genre {}", genre);
+		logger.info("Buscando lista de peliculas por genero {}", genre);
 		return ResponseEntity.ok().body(movieService.getListByGenre(genre));
 	}
 
 	@PostMapping
 	public ResponseEntity<Movie> saveMovie(@RequestBody Movie movie) {
-		logger.info("Movie sent to rabbitmq and saved into database");
+		logger.info("Pelicula enviada a rabbitmq y persistida en la base de datos");
 		messageSender.send(movie);
 		return ResponseEntity.ok().body(movieService.save(movie));
 	}

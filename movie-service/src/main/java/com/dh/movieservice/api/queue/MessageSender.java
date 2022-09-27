@@ -25,7 +25,7 @@ public class MessageSender {
 
 
     public void send(Movie movie) {
-        log.info("[SEND MESSAGE TO " + this.movieQueue.getName() + "] -> " + movie);
+        log.info("[ENVIAR MENSAJE A " + this.movieQueue.getName() + "] -> " + movie);
         this.rabbitTemplate.convertAndSend(this.movieQueue.getName(), movie);
     }
 

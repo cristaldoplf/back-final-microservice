@@ -74,12 +74,12 @@ public class CatalogServiceImpl implements CatalogService {
     }
 
     private List<MovieWS> findMoviesEmptyFallback(CallNotPermittedException ex) {
-        log.info("Circuit breaker activated for movies-service");
+        log.info("Circuit breaker activado para movies-service");
         return new ArrayList<>();
     }
 
     private List<SerieWS> findSeriesEmptyFallback(CallNotPermittedException ex) {
-        log.info("Circuit breaker activated for series-service");
+        log.info("Circuit breaker activado para series-service");
         return new ArrayList<>();
     }
 }
