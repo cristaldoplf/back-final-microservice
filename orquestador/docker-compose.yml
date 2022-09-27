@@ -72,9 +72,6 @@ services:
       - MONGO_INITDB_DATABASE=serie_database
       - MONGO_INITDB_ROOT_PASSWORD=root
       - MONGO_INITDB_PORT_NUMBER="27018"
-    volumes:
-      - ./db-init/initialize-serie-database.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
-      - series-db:/bitnami/mongodb
   db-mongo-catalog:
     image: bitnami/mongodb:latest
     container_name: catalog-mongo-db
@@ -85,11 +82,4 @@ services:
       - MONGO_INITDB_DATABASE=catalog_database
       - MONGO_INITDB_ROOT_PASSWORD=root
       - MONGO_INITDB_PORT_NUMBER="27017"
-    volumes:
-      - ./db-init/initialize-catalog-database.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
-      - catalog-db:/bitnami/mongodb
-
-volumes:
-  series-db:
-  catalog-db:
   

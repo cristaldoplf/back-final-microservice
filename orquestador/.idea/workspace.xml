@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c5822d8-f124-4b6b-8436-6cd65da882f9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../catalog-service/src/main/java/com/dh/catalogservice/api/controller/CatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../catalog-service/src/main/java/com/dh/catalogservice/api/controller/CatalogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../catalog-service/src/main/java/com/dh/catalogservice/api/queue/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../catalog-service/src/main/java/com/dh/catalogservice/api/queue/MessageListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../catalog-service/src/main/java/com/dh/catalogservice/api/service/impl/CatalogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../catalog-service/src/main/java/com/dh/catalogservice/api/service/impl/CatalogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../infrastructure/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../infrastructure/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../infrastructure/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../infrastructure/db-init/initialize-catalog-database.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../infrastructure/db-init/initialize-serie-database.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../infrastructure/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movie-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movie-service/src/main/java/com/dh/movieservice/api/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-service/src/main/java/com/dh/movieservice/api/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movie-service/src/main/java/com/dh/movieservice/api/queue/MessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-service/src/main/java/com/dh/movieservice/api/queue/MessageSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../movie-service/src/main/java/com/dh/movieservice/domain/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-service/src/main/java/com/dh/movieservice/domain/model/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/src/main/java/com/dh/registryservice/RegistryServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../registry-service/src/test/java/com/dh/registryservice/RegistryServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/api/controller/SerieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/api/controller/SerieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/api/queue/MessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/api/queue/MessageSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/model/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/model/Chapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/model/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/model/Season.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/model/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/model/Serie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/repository/DatabaseSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../serie-service/src/main/java/com/dh/serieservice/domain/repository/DatabaseSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-init/initialize-catalog-database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-init/initialize-serie-database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,5 +35,16 @@
       <updated>1664196108104</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
